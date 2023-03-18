@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Summary</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <style>
+
+    main{
+        display: grid;
+        place-items: center;
+        font-size: 18px;
+        min-height: 100vh;
+    }
+    
+    body{
+        background-color: white;
+    }
+    @media screen and (max-width: 320px) {
+        body{
+            background-color: black;
+            display: grid;
+            place-items: center;
+        }
+    }
+        
+    .result{
+        background-color: hsla(252, 68%, 55%, 0.911);
+        background-color: hsl(241, 77%, 43%);
+        border-radius: 20px;
+        color: rgba(255, 255, 255, 0.699);
+        display: grid;
+        place-items: center;
+        width: 250px;
+        height: 300px;
+        text-align: center;
+        position: absolute;
+        left: 400px;
+        top: 185px;
+    }
+   
+    button{
+        background-color: hsl(224, 30%, 27%);
+        color: white;
+        border-radius: 20px;
+        border: none;
+        width: 200px;
+        height: 30px;
+        margin-left: 20px;
+        display: grid;
+        place-items: center;
+    }
+    
+    
+    .score{
+        display: grid;
+        border-radius: 70%;
+        width: 100px;
+        height: 100px;
+        place-items: center;
+        background-color: hsla(241, 76%, 59%, 0.473);
+       background-color: rgb(73, 22, 212);
+       
+       
+       
+    }
+    .summary{
+        display: inline-block;
+        border-radius: 10px;
+        box-shadow: 1px 1px rgba(0, 0, 0, 0.205);
+        width: 250px;
+        height: 300px;
+        padding-left: 100px;
+        padding-right: 5px;
+        position: absolute;
+        right: 430px;
+        top: 185px;
+    }
+   
+    h1{
+        font-size: 18px;
+    }
+    .line{
+        display: inline-block;
+        vertical-align: middle;
+        align-items: center;
+    }
+    .reaction{
+        color: hsl(0, 100%, 67%);
+        background-color: hsla(0, 77%, 68%, 0.103);
+        border-radius: 5px;
+        
+    }
+    .memory{
+        color: hsl(39, 100%, 56%);
+        background-color: hsla(56, 88%, 52%, 0.199);
+        border-radius: 5px;
+    }
+    .verbal{
+        color: hsl(166, 100%, 37%);
+        background-color: rgba(126, 241, 164, 0.103);
+        border-radius: 5px;
+    }
+    .visual{
+        color: hsl(234, 85%, 45%);
+        background-color: hsla(230, 85%, 45%, 0.1);
+        border-radius: 5px;
+    }
+    </style>
+    <link href="favicon-32x32.png" type="image/x-icon" rel="icon"/>
+</head>
+<body>
+    <main>
+<div id="content">
+    <div class="line">
+<div class="result">
+<p>Your Result</p>
+
+<div class="score">
+<p><span style="font-size: 40px;"> 76 </span> <br/><span style="font-size: 10px;"> of 100</span> </p>
+</div>
+
+<h3>Great</h3>
+<span style="font-size: 15px;"> You scored higher than 65% of the people who have taken these tests.</span>
+</div><!--line-->
+</div><!--result-->
+
+<div class="line">
+<div class="summary">
+<h1>Summary</h1>
+
+<p class="reaction"><img src="icon-reaction.svg"/>Reaction <span style="font-weight: bold; color: black;"> &nbsp &nbsp  &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp 80 </span> <span style="color: black;">/ 100</span></p>
+<p class="memory"><img src="icon-memory.svg"/>Memory <span style="color: black; font-weight: bold;"> &nbsp &nbsp  &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp 92</span> <span style="color: black;"> / 100</span> </p>
+<p class="verbal"><img src="icon-verbal.svg"/> Verbal <span style="color: black; font-weight: bold;"> &nbsp &nbsp  &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 61</span> <span style="color: black;">/ 100</span></p>
+<p class="visual"><img src="icon-visual.svg"/> Visual <span style="color: black; font-weight: bold;"> &nbsp &nbsp  &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 72</span> <span style="color: black;"> / 100</span> </p>
+<button>Continue</button>
+</div><!--summary-->
+</div><!--line-->
+</div><!--content-->
+    </main>
+</body>
+</html>
